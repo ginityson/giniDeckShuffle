@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gini's NG Deck Shuffle</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/giniDeckShuffleNG.js" charset="utf-8"></script>
+  </head>
+  <body ng-app=myApp>
+    <h2>Gini's NG Deck Shuffle</h2>
+    <div ng-controller="DeckShufflerController">
+        <button ng-click="cutDeck()" type="button" name="button">Cut Deck</button>
+        <button ng-click="shuffleDeck()" type="button" name="button">Shuffle Deck</button>
+        <ul>
+          <li ng-repeat="card in deck">{{ card.face }} of {{ card.suit }}</li>
+        </ul>
+    </div>
+  </body>
+</html>
