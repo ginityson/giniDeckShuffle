@@ -1,4 +1,4 @@
-console.log( 'giniDeckShuffle.js Ta Da!' );
+console.log( 'giniDeckShuffle.js Ta DaDa!' );
 var myApp = angular.module( 'myApp', [] );
 myApp.controller( 'DeckShufflerController', [ '$scope', function( $scope ){
   $scope.deck = [];//array holds deck of cards
