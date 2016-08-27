@@ -8,8 +8,8 @@ myApp.controller( 'DeckShufflerController', [ '$scope', function( $scope ){
   $scope.cutDeck = function(){
     console.log( 'in cutDeck' );
     var cutIndex = Math.random() * $scope.deck.length;
-    cutIndex = Math.floor( cutIndex );
-    console.log( cutIndex );
+    cutIndex = Math.floor(  cutIndex );
+    console.log( 'cutIndex ', cutIndex );
     var topCut = [];
     for( var i=cutIndex; i<$scope.deck.length; i++ ){
       topCut.push( $scope.deck[ i ] );
@@ -33,7 +33,7 @@ myApp.controller( 'DeckShufflerController', [ '$scope', function( $scope ){
         $scope.deck.push( newCard );
       }//end faces loop
     }//end suits loop
-    console.log( $scope.deck );
+    console.log( '$scope.deck', $scope.deck );
   };//end fun setupDeck
 
   $scope.shuffleDeck = function(){
