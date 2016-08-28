@@ -3,7 +3,7 @@ var myApp = angular.module( 'myApp', [] );
 myApp.controller( 'DeckShufflerController', [ '$scope', function( $scope ){
   $scope.deck = [];//array holds deck of cards
   $scope.suits = [ 'Clubs', 'Diamonds', 'Hearts', 'Spades' ];//array of suits
-  $scope.faces = [ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King' ];//array of faces
+  $scope.faces = [ 'Edgar', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Patches', 'Gini', 'Grace' ];//array of faces
 
   $scope.cutDeck = function(){
     console.log( 'in cutDeck' );
